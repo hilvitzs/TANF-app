@@ -25,7 +25,8 @@ This project uses the U.S. Web Design System ([USWDS](https://designsystem.digit
   ```
 - Configure local environment variables with
   ```
-  cp .env.local.example .env.local
+  cp .env.example .env.local && \
+  cp .env.example .env.test
   ```
 - Build the Docker image locally with
   ```
@@ -38,10 +39,7 @@ This project uses the U.S. Web Design System ([USWDS](https://designsystem.digit
 
 Navigate to [localhost:3000](localhost:3000) and you should see the app.
 
-
 ***Login is now linked with the [tdrs-backend](../tdrs-backend/README.md) service. You will need a local instance of that application running**
-
-
 
 The `TANF-app/tdrs-frontend/src` directory is mounted into the container so changes to the source code, when saved, automatically update the contents of `/home/node/app/src` in the container. Restarting the container is not necessary during development and you should see changes update in the UI instantly.
 
