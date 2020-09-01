@@ -8,11 +8,6 @@ This project uses the U.S. Web Design System ([USWDS](https://designsystem.digit
   ```
   cd TANF-app/tdrs-frontend
   ```
-- Configure local environment variables with
-  ```
-  cp .env.example .env.local && \
-  cp .env.example .env.test
-  ```
 - Build the Docker image locally with
   ```
   docker build --target localdev -t tdp-frontend:local . -f Dockerfile.local
